@@ -1,0 +1,52 @@
+<!--<button routerLink="student">page 1</button>-->
+<!--<button routerLink="registration">page 2</button>-->
+
+<!--<button (click) = "logout()">Logout</button>-->
+<!--<router-outlet></router-outlet>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+
+        <!--<a class="navbar-brand" routerLink="/" style="color: black ;font-size: 25px ;padding-top: 25px">DashBoard</a>-->
+        <!--</li>-->
+
+        <!--<a routerLink="/nav/dashboard" routerLinkActive="active" href="#" class="nav-link">-->
+        <!--<i class="nav-icon fa fa-users"></i>-->
+        <!--<p>-->
+        <!--Home-->
+        <!--</p>-->
+        <!--</a>-->
+
+
+        <a routerLink="dashboard" routerLinkActive="active" href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="student" routerLinkActive="active" class="nav-link" href="#">Manage Student</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="registration" routerLinkActive="active" class="nav-link" href="#">Manage Registration</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="logout()"class="nav-link" href="#">Logout</a>
+      </li>
+      <!--<li class="nav-item">-->
+      <!--<a routerLink="registration" routerLinkActive="active" class="nav-link" href="#">Manage Registration</a>-->
+      <!--</li>-->
+      <!--&lt;!&ndash;<li class="nav-item">&ndash;&gt;-->
+      <!--<a routerLink="dashboard" routerLinkActive="active" class="nav-link" href="#">Payment</a>-->
+      <!--</li>-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    </form>
+  </div>
+
+</nav>
+<router-outlet></router-outlet>
+
+

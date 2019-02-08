@@ -1,0 +1,278 @@
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link text-center">
+      <span class="brand-text font-weight-light">Student Management</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a routerLink="/main/dashboard" routerLinkActive="active" href="#" class="nav-link">
+              <i class="nav-icon fa fa-dashboard"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="/main/student" routerLinkActive="active" href="#" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Manage Student
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="/main/registration" routerLinkActive="active" href="#" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Manage Registration
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="/main/manage-schedules" class="nav-link">
+              <i class="nav-icon fa fa-sitemap"></i>
+              <p>
+                Manage Payment
+              </p>
+            </a>
+          </li>
+
+
+
+          <!--<li class="nav-item">-->
+            <!--<a (click)="logout()" href="#" class="nav-link">-->
+              <!--<i class="nav-icon fa fa-sign-out"></i>-->
+              <!--<p >-->
+                <!--Logout-->
+              <!--</p>-->
+            <!--</a>-->
+          <!--</li>-->
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2018 <a href="http://ijse.lk">IJSE</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+  <!--<meta charset="UTF-8">-->
+  <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <!--<title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="navbar">-->
+  <!--<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>-->
+  <!--<a href="#"><i class="fa fa-fw fa-search"></i> Search</a>-->
+  <!--<a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>-->
+  <!--<a routerLink="/about" routerLinkActive="active"><i class="fa fa-fw fa-newspaper-o"></i> About</a>-->
+  <!--<a routerLink="/lecture" routerLinkActive="active"><i class="fa fa-fw fa-level-up" ></i> Lecture Panel</a>-->
+  <!--<a href="#"><i class="fa fa-fw fa-user"></i> Login</a>-->
+<!--</div>-->
+<!--<div id="slide-container">-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class="about">-->
+  <!--<strong>Why is Institute of IT the only Choice for IT, Computer Science and Software Engineering?</strong>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class="about2">-->
+  <!--Inspired by its mission “assisting the students to be qualified professionally and producing individuals desired and demanded by the market standards of the existing setup”. Institute of IT, being a leading IT education provider in Sri Lanka has produced over 15000 skillfull IT professionals occupying eminent positions in many reputed companies in the island. Since its inception in 2002, it focuses on enhancing the skills and attitudes which are desperately sought by the IT industry. Obtaining a software engineering degree from Institute of IT opens doors to countless possibilities in the industry both in Sri Lanka and abroad therefore Institute of IT is surely the best institute for after A/L course programs in IT and Computer Science. Distinguished as the only Oracle authorized training center in Sri Lanka.-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class="jumbotron">-->
+  <!--<h3>You Can Register Now</h3>-->
+<!--</div>-->
+<!--<div class="main">-->
+  <!--<form [formGroup]="form">-->
+    <!--<div class="container">-->
+      <!--<div class="row">-->
+        <!--<div class="col-25">-->
+          <!--<label for="studentid">N I C</label>-->
+        <!--</div>-->
+        <!--<div class="col-75">-->
+          <!--<div class="form-group">-->
+            <!--<input formControlName="studentid" [(ngModel)]="selectedStudent.sid"-->
+                   <!--type="text"-->
+                   <!--id="studentid"-->
+                   <!--name="nic"-->
+                   <!--placeholder="Your NIC.."-->
+                   <!--class="form-control">-->
+            <!--<div *ngIf="studentid.touched && studentid.invalid" class="alert alert-danger">-->
+              <!--Student ID is Required-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<div class="col-25">-->
+          <!--<label for="studentname"> Name</label>-->
+        <!--</div>-->
+        <!--<div class="col-75">-->
+          <!--<div class="form-group">-->
+            <!--<input formControlName="studentname" [(ngModel)]="selectedStudent.sname"-->
+                   <!--type="text"-->
+                   <!--id="studentname"-->
+                   <!--name="name"-->
+                   <!--placeholder="Your name.."-->
+                   <!--class="form-control">-->
+            <!--<div *ngIf="studetname.touched && studetname.invalid" class="alert alert-danger">-->
+              <!--Student Name is Required-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<div class="col-25">-->
+          <!--<label for="studentcontact"> Mobile Number</label>-->
+        <!--</div>-->
+        <!--<div class="col-75">-->
+          <!--<div class="form-group">-->
+            <!--<input formControlName="studentcontact" [(ngModel)]="selectedStudent.scontact"-->
+                   <!--type="text"-->
+                   <!--id="studentcontact"-->
+                   <!--name="contact"-->
+                   <!--placeholder="Your Mobile Number.."-->
+                   <!--class="form-control">-->
+            <!--<div *ngIf="studentcontact.touched && studentcontact.invalid" class="alert alert-danger">-->
+              <!--<div *ngIf="studentcontact.errors.Stu">-->
+                <!--Student Contact is Required-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<div class="col-25">-->
+          <!--<label for="studentaddress"> Address</label>-->
+        <!--</div>-->
+        <!--<div class="col-75">-->
+          <!--<div class="form-group">-->
+            <!--<input formControlName="studentaddress" [(ngModel)]="selectedStudent.saddress"-->
+                   <!--type="text"-->
+                   <!--id="studentaddress"-->
+                   <!--name="address"-->
+                   <!--placeholder="Your Mobile Number.."-->
+                   <!--class="form-control">-->
+            <!--<div *ngIf="studentaddress.touched && studentaddress.invalid"  class="alert alert-danger">-->
+              <!--Student Contact is Required-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<div class="col-25">-->
+          <!--<label for="subject">Subject</label>-->
+        <!--</div>-->
+        <!--<div class="col-75">-->
+          <!--<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+        <!--<button type="submit" class="btn btn-primary" (click)="saveStudent()">Save</button>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<br>-->
+    <!--<div class="column">-->
+      <!--<div class="card">-->
+        <!--<img src="../../assets/java1.jpg" alt="Mr." style="width:100%">-->
+        <!--<div class="container">-->
+          <!--<h2>Java SE & Java EE</h2>-->
+          <!--<p class="title">Full Time</p>-->
+          <!--<p>Some text that describes me lorem ipsum ipsum lorem.</p>-->
+          <!--<p>java@gmail.com</p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="column">-->
+      <!--<div class="card">-->
+        <!--<img src="../../assets/angular.jpg" alt="Mr." style="width:100%">-->
+        <!--<div class="container">-->
+          <!--<h2>Web App Design</h2>-->
+          <!--<p class="title">Full Time</p>-->
+          <!--<p>Some text that describes me lorem ipsum ipsum lorem.</p>-->
+          <!--<p>java@gmail.com</p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="column">-->
+      <!--<div class="card">-->
+        <!--<img src="../../assets/angular22.jpg" alt="Mr." style="width:100%">-->
+        <!--<div class="container">-->
+          <!--<h2>Mobile Apps</h2>-->
+          <!--<p class="title">Part Time</p>-->
+          <!--<p>Some text that describes me lorem ipsum ipsum lorem.</p>-->
+          <!--<p>java@gmail.com</p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<br>-->
+    <!--<app-dashboard>-->
+
+    <!--</app-dashboard>-->
+  <!--</form>-->
+<!--</div>-->
+<!--</body>-->
+<!--<br>-->
+<!--<footer class="modal-footer">-->
+  <!--<br>-->
+  <!--<strong>Copyright &copy; 2018 <a href="http://ijse.lk">IJSE</a>.</strong>-->
+  <!--All rights reserved.-->
+  <!--<div class="float-right d-none d-sm-inline-block">-->
+    <!--<b>Version</b> 1.0.0-->
+  <!--</div>-->
+<!--</footer>-->
+<!--</html>-->
+

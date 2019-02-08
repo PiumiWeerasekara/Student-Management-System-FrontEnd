@@ -1,0 +1,54 @@
+body {
+
+  background-image: url("https://hdqwalls.com/download/twilight-abstract-blur-o6-2880x1800.jpg");
+  width: 1360px;
+  height: 620px;
+  /*font-family: 'Lora';*/
+  /*background-attachment: fixed;*/
+  /*background-position: center;*/
+  /*!*background-size: cover;*!*/
+  /*background-color: lightblue;*/
+  /*margin: 0 auto;*/
+}
+#background{
+  background-color: #E5CCFF;
+  /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65));*/
+
+  position: absolute;
+  margin: auto;
+  padding-left: 30px;
+  padding-top: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  font-family: 'Lora';
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
+  /*width: 50%;*/
+  /*height: 50%;*/
+
+
+  /*background-color: lightblue;*/
+  /*font-family: 'Lora';*/
+  /*background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65));*/
+  /*background-attachment: fixed;*/
+  /*background-position: top;*/
+  /*background-size: cover;*/
+  /*background-image: url("https://hdqwalls.com/download/twilight-abstract-blur-o6-2880x1800.jpg");*/
+
+}
+#button{
+  background-color: lightgreen;
+  background-image: url("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjHmoylzbzeAhUIqY8KHSgaCLsQjRx6BAgBEAU&url=http%3A%2F%2Fpluspng.com%2Fbus-tour-png-9576.html&psig=AOvVaw2gGvXcB7iUWN5aRIVZJGT0&ust=1541484978528093");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+}
